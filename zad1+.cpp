@@ -4,20 +4,20 @@ using namespace std;
 
 int main()
 {
-    int x,y;
-
-    if(x < 10)
-    {
-        do 
-        {
+    int y = 0;
+    int x;
 
 
-        }while()
-
-
-
-    }
-
-return 0;
+   // do loop execution
+   do 
+   {
+      y = 3 * x;
+      x++;
+      
+      cout << "wartość y: " << y << endl;
+   } 
+   while( x < 10 );
+ 
+   return 0;
 
 }
