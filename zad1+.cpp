@@ -8,7 +8,6 @@ int main()
     int x;
 
 
-   // do loop execution
    do 
    {
       y = 3 * x;
