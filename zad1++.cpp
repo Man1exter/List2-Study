@@ -14,9 +14,7 @@ x++;
 
 cout<<"wyniki while  / do 10 to: "<<y<<endl; 
 
-
 }
-
 
     return 0;
 }
