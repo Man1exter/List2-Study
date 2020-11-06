@@ -10,9 +10,9 @@ int main()
     int p; // kolejne przybliżenie..
     int pn; //kolejne przyblizenie..
     int n; // wartość p dokladniejsza n..
-    int EPS; // wynik koncowy..
+    int EPS = 0.0000001; // wynik koncowy..
     
-    cout << "Podaj wartość pierwiastka kwadratowego z metody iteracyjnej Newtona" << endl;
+    cout << "Podaj wartość pierwiastka kwadratowego z metody iteracyjnej Newtona: " << endl;
     cin >> x;
 
      cout << "Podaj wartość n: " << endl;
@@ -33,22 +33,29 @@ int main()
          p = x * 2.0;
      }
 
+     p = p + 2 * EPS;
+
      cout << "wynik koncowy z if else do sprawdzenia: " << p << endl;
 
-     while(fabs(p = 0 - p) >= EPS)
+     while(p = 0 - p >= EPS)
      {
          
-       i++;
-       
-       p = (x + p*p) / (2 * p);
-
+       p = ( x + p*p ) / ( 2 * p );
 
      }
+    
+    p = M_E;
    
-   cout << " wynik EPS: " << EPS << endl;
-
-
+   cout << " wynik koncowy: " << sqrt(p) << endl;
 
 
     return 0;
 }
+//-------przykład: --------
+
+// 1 wartosc = 5
+// 2 wartosc = 5
+// wynik p = 0;
+// wynik n = 5;
+// wynik z if else = 2;
+// wynik koncowy = 1.41421
