@@ -10,16 +10,19 @@ int y = 0;
 
 while( x < 10 )
 {
-
+y = 1;
     while( y < 10 )
     {
-         y++;
+        
          cout<< x << " * " << y <<" =  "<< x * y <<endl;
+         y++;
 
     }
- x++;
+
  cout<< x << " * " << y <<" =  "<< x * y <<endl;
+ x++;
 }
+
 
 
 
