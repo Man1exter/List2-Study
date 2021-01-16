@@ -4,9 +4,8 @@ using namespace std;
 
 int main()
 {
-    int y = 0;
+    int y;
     int x;
-
 
    do 
    {

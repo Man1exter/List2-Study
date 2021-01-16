@@ -8,17 +8,14 @@ int main()
 int x = 0;
 int y = 0;
 
-
 do
 {
-
 
  cout<< x <<" * "<< y <<"  =  "<< x * y <<endl;
 x++;
 
   do 
   {
-
 
     cout<< x <<" * "<< y <<"  =  "<< x * y <<endl;
     y++;
