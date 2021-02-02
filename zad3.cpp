@@ -25,30 +25,18 @@ int main()
 
 
      if(x > 1.0){
-
        p = x/2.0;
-
      } else {
-
          p = x * 2.0;
      }
-
      p = p + 2 * EPS;
-
      cout << "wynik koncowy z if else do sprawdzenia: " << p << endl;
-
      while(p = 0 - p >= EPS)
      {
-         
        p = ( x + p*p ) / ( 2 * p );
-
      }
-    
     p = M_E;
-   
    cout << " wynik koncowy: " << sqrt(p) << endl;
-
-
     return 0;
 }
 //-------przykład: --------
